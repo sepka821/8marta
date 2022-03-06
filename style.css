@@ -1,0 +1,41 @@
+body{
+background: url(img/fon.jpg) fixed;
+background-size: cover;
+}
+.main{display: flex;}
+
+@keyframes obj1{
+0%{opacity: 0;}
+30%{opacity: 0.3;}
+60%{opacity: 0.6;}
+100%{opacity: 1;}
+
+}
+
+@keyframes obj2{
+	0%{opacity:0;
+transform: scale(0.5);}
+
+25%{opacity: 1;
+transform: scale(1.2);
+}
+50%{opacity: 1;
+transform: scale(0.5);
+transform:  rotate(25deg);
+
+}
+
+75%{transform: scale(1.2);}
+100% {transform: scale(0.5);
+}
+}
+.obj1{
+
+	animation-name: obj1;
+	animation-duration: 7s;
+}
+.obj2{
+
+	animation-name: obj2;
+	animation-duration:7s;
+}
